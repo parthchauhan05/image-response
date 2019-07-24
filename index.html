@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Response</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <img srcset="images/header-image-400.jpg 400w, 
+                images/header-image-600.jpg 600w, 
+                images/header-image-800.jpg 800w, 
+                images/header-image-1200.jpg 1200w, 
+                images/header-image-1600.jpg 1600w, 
+                images/header-image-2000.jpg 2000w, 
+                images/header-image-2400.jpg 2400w" src="images/header-image-400.jpg"
+      alt="Two pelicans next to a river bed." class="header__image" />
+    <h1>Pelicans</h1>
+  </header>
+  <main class="main">
+
+    <section class="part1">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magni expedita nulla quidem eius odit
+        cupiditate fugit? Incidunt sunt alias eum, optio commodi obcaecati? Error vitae eveniet praesentium id libero.
+      </p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magni expedita nulla quidem eius odit
+        cupiditate fugit? Incidunt sunt alias eum, optio commodi obcaecati? Error vitae eveniet praesentium id libero.
+      </p>
+    </section>
+    <picture class="main__image">
+      <source srcset="
+        images/main-image-square-400.jpg 400w,
+        images/main-image-square-600.jpg 600w,
+        images/main-image-square-700.jpg 700w,
+        images/main-image-square-800.jpg 800w,
+        images/main-image-square-1000.jpg 1000w,
+        images/main-image-square-1200.jpg 1200w,
+        images/main-image-square-1600.jpg 1600w" media="(min-width: 1028px)" sizes="33vw">
+
+      <source srcset="
+      images/main-image-portrait-400.jpg 400w,
+      images/main-image-portrait-600.jpg 600w,
+      images/main-image-portrait-800.jpg 800w,
+      images/main-image-portrait-1200.jpg 1200w,
+      images/main-image-portrait-1600.jpg 1600w" media="(min-width: 768px)" sizes="50vw">
+
+      <img srcset="images/main-image-landscape-400.jpg 400w,
+      images/main-image-landscape-600.jpg 600w,
+      images/main-image-landscape-800.jpg 800w,
+      images/main-image-landscape-1200.jpg 1200w,
+      images/main-image-landscape-1600.jpg 1600w,
+      images/main-image-landscape-2000.jpg 2000w,
+      images/main-image-landscape-2400.jpg 2400w" src="images/main-image-landscape-400.jpg"
+        alt="A pelican in the lake" />
+    </picture>
+
+    <section class="part2">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magni expedita nulla quidem eius odit
+        cupiditate fugit? Incidunt sunt alias eum, optio commodi obcaecati? Error vitae eveniet praesentium id libero.
+      </p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magni expedita nulla quidem eius odit
+        cupiditate fugit? Incidunt sunt alias eum, optio commodi obcaecati? Error vitae eveniet praesentium id libero.
+      </p>
+    </section>
+
+    <picture class="main__image2">
+      <source media="(min-width:728px)" srcset="images/main-image-landscape-400.jpg 400w,
+        images/main-image-landscape-600.jpg 600w,
+        images/main-image-landscape-800.jpg 800w,
+        images/main-image-landscape-1200.jpg 1200w,
+        images/main-image-landscape-1600.jpg 1600w,
+        images/main-image-landscape-2000.jpg 2000w,
+        images/main-image-landscape-2400.jpg 2400w" sizes="(max-width:1027px) 50vw, 0vw">
+      <img src="" alt="" />
+    </picture>
+
+  </main>
+  <footer class="footer">
+    <img srcset="images/footer-image-400.jpg 400w,
+                images/footer-image-600.jpg 600w,
+                images/footer-image-800.jpg 800w,
+                images/footer-image-1200.jpg 1200w,
+                images/footer-image-1600.jpg 1600w,
+                images/footer-image-2000.jpg 2000w,
+                images/footer-image-2400.jpg 2400w" sizes="80w" src="images/footer-image-400.jpg"
+      class="footer__image">
+    <p class="footer__text">&copy; 2019 All right reserved.</p>
+  </footer>
+</body>
+
+</html>
